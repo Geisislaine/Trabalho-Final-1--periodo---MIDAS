@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Milonga&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+    
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="EstiloLogin.css">
+    <title>Login</title>
+  </head>
+  <body>
+    <div id="conteiner">
+      <header class="sticky-top">
+        <div id="logo">
+          <a href="Home.html">
+            <img src="Imagens/midas.png" alt="Money For Teen" height="50" />
+          </a>
+          <p>MIDAS</p>
+        </div>
+        <div id="titulo">
+          <h3>Começando com um real por vez...</h3>
+        </div>
+      </header>
+
+      <section>
+        <div class="login">
+          <form>
+            <div class="form-group">
+              <label>Email ou Telefone:</label>
+              <input type="email" class="form-control " id="email"
+                aria-describedby="emailHelp" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Senha:</label>
+              <input type="password" class="form-control " id="senha" name="password" minlength="8" required>
+            </div>
+            <div class="esqueciSenha">
+              <a href="#" class="decoracaoLink">Esqueci minha senha</a>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input ">
+              <label class="form-check-label" for="exampleCheck1">Mantenha-me
+                conectado</label>
+            </div>
+            
+            <div class="alinhaEsquerda">
+              <a href="Cadastro.html" class="decoracaoLink">Ainda não sou cadastrado</a>
+              <button type="submit" class="botao btn btn-primary ">Entrar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <script src="ScriptPrincipal.js" type="javascripty"></script>
+    </body>
+  </html>

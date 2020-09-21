@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Milonga&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Milonga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="EstiloFaleConosco.css">
+    <title>Fale Conosco</title>
+</head>
+<body>
+    <div id="conteiner">
+    <header class="sticky-top">
+            <div id="logo">
+                <a href="Home.html">
+                <img src="Imagens/midas.png" alt="Money For Teen" height="50"/>
+                </a>
+                <p>MIDAS</p>
+            </div>
+            <div id="titulo">
+                <h3>Começando com um real por vez...</h3>
+            </div>
+            <div id="login"> 
+                <div id="Entrar">
+                    <a href="Login.html">Entrar</a>
+                </div>
+                <div id="Cadastrar"> 
+                    <a href="cadastro.html">
+                    <input class="btn btn-primary" data-toggle="button" aria-pressed="false" type="button" name="botaoComeçar" value="Começar grátis">
+                    </a>
+                </div>       
+            </div>
+    </header>
+
+    <nav class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a href="Home.html" class="nav-link" id="v-pills-home-tab" role="tab" aria-controls="v-pills-profile" aria-selected="true">Home</a></br>
+        <a href="Dicas.html" class="nav-link" id="v-pills-profile-tab" role="tab" aria-controls="v-pills-profile" aria-selected="false">Como Começar!</a></br>
+        <a href="Investimento.html" class="nav-link" id="v-pills-profile-tab" role="tab" aria-controls="v-pills-profile" aria-selected="false">Investimentos</a></br>
+        <a href="Login.html" class="nav-link" id="v-pills-profile-tab" role="tab" aria-controls="v-pills-profile" aria-selected="false">Controle de Gastos</a></br>
+        <a href="FaleConosco.html" class="nav-link active" id="v-pills-profile-tab" role="tab" aria-controls="v-pills-profile" aria-selected="false">Fale Conosco</a></br>
+    </nav>
+    
+    <section>
+        <div aria-label="breadcrumb">
+            <ol class="breadcrumb corFundo">
+                <li class="breadcrumb-item"><a href="Home.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Fale Conosco</li>
+            </ol>
+        </div>
+        <form action="" method="POST">
+            <div class="form-group row">
+                <div class="col-sm-11">
+                    <input type="radio" name="fisicaJuridica" value="pessoaFisica" required/> Pessoa Física
+                    <input type="radio" class="margemEsquerda" name="fisicaJuridica" value="pessoaJuridica" required/> Pessoa Jurídica
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="CNPJ/CPF" class="col-sm-3 col-form-label alinhaDireita">*CNPJ/CPF:</label>
+                <div class="col-sm-5">
+                    <input id="CNPJ/CPF" class="form-control" type="number" name="CNPJ/CPF" required/>
+                </div>
+            </div>
+                
+            <div class="form-group row">
+                <label for="nome" class="col-sm-3 col-form-label alinhaDireita">*Nome:</label>
+                <div class="col-sm-5">
+                    <input id="nome" class="form-control" type="text" name="nome" required/>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="e-mail" class="col-sm-3 col-form-label alinhaDireita">*E-mail:</label>
+                <div class="col-sm-5">
+                    <input id="eMail" class="form-control" type="email" name="e-mail" required/>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="assunto" class="col-sm-3 col-form-label alinhaDireita">*Assunto:</label>
+                <div class="col-sm-5">
+                    <select name="assunto" class="form-control" required>
+                        <option value=""></option>
+                        <option value="consultoria">Consultoria</option>
+                        <option value="duvidas">Dúvidas</option>
+                        <option value="elogios">Elogios</option>
+                        <option value="financeiro">Financeiro</option>
+                        <option value="SAC">SAC</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="mensagem" class="col-sm-3 col-form-label alinhaDireita">*Mensagem:</label>
+                <div class="col-sm-5">
+                    <textarea id="mensagem" class="form-control" rows="6" cols="40" name="mensagem" required></textarea>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-11">
+                    <input type="checkbox" id="queroMensagem" name="receberMensagem" required/>
+                            Quero receber notificações e promoções por e-mail. 
+                </div>
+            </div>
+            <div class="col-sm-16"></div>
+                <input type="submit" class="btn btn-primary alinhaDireita botao" value="Enviar" name="botaoEnviar"><br/>
+            </div>
+        </form>    
+    </section>
+    <script src="ScriptPrincipal.js" type="javascripty"></script>
+</body>
+</html>
